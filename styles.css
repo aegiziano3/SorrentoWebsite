@@ -60,6 +60,17 @@ h2 {
     justify-self: center;
     
 }
+
+.navigation a {
+    text-decoration: none;
+    color: var(--nav-link);
+    padding: 0.8em;
+}
+
+.navigation a:hover {
+    color: var(--nav-hover);
+}
+
 .content {
     line-height: var(--content-lh);
 }
@@ -69,8 +80,23 @@ h2 {
 }
 .footer {
     color: var(--footer-link);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.footer a {
+.social {
+    grid-column-start: 2;
+    justify-self: center;
+    color: var();
 
+}
+
+.secondary-nav {
+    grid-column-start: 1;
+    justify-self: center;
+}
+
+.copyright {
+    grid-column-start: 3;
+    justify-self: center;
 }
