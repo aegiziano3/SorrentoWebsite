@@ -22,17 +22,18 @@
     <main class="content">
         <form id="contact" method="POST" action="https://example.com/send">
         <h1>Contact Us</h1>
-        <label class="lable" for="user-name">Your Name</label>
+        <label class="label" for="user-name">Your Name</label>
         <input type="text" class="input" id="user-name" name="sender" placeholder="Jane Smith">
         <label class="label" for="user-email">Your Email Address</label>
-        <input type="email" class="input" id="user-email" placeholder="jane@example.com">
-        <label class="lable" for="user-subject">Subject</label>
+        <input type="email" class="input" id="user-email" name="email" placeholder="jane@example.com">
+        <label class="label" for="user-subject">Subject</label>
         <input type="text" class="input" id="user-subject" name="subject" placeholder="Date availability">
-        <label class="lable" for="user-message">Your Message</label>
+        <label class="label" for="user-message">Your Message</label>
         <textarea class="input" id="user-message" name="Message" placeholder="Hello," cols="25" rows="10"></textarea>
-        <div class="buttons"></div>
+        <div class="buttons">
         <button type="reset" class="button">Undo All</button>
         <button type="submit" class="button">Submit</button>
+        </div>
         </form>
     </main>
     <footer class="footer">
@@ -51,7 +52,7 @@
             </a>
         </nav>
         <p class="copyright">
-            &copy; Sorrento by the sea 2020
+            &copy; Sorrento by the Sea 2020
         </p>
     </footer>
 </body>

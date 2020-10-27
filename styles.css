@@ -45,7 +45,7 @@ h2 {
     background-color: var(--primary-light);
     padding: 0.5em;
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
 }
 
 .logo {
@@ -54,8 +54,8 @@ h2 {
     align-self: center;
 }
 
-.home link {
-
+.home-link {
+    justify-self: center;
 }
 .navigation {
     display: flex;
@@ -129,7 +129,7 @@ h2 {
     margin-top: 4em;
 }
 
-.lable {
+.label {
     display: block;
     margin-top: 1em;
 }
@@ -152,7 +152,7 @@ h2 {
     padding: 0.5em;
     background-color: var(--primary-color);
     color: white;
-    min-width: width 80px;
+    min-width: 80px;
     border: 1px solid var(--primary-color);
     border-radius: 0.5em;
 }
