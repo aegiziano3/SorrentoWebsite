@@ -1,0 +1,34 @@
+@media screen and ( max-width: 576px ) {
+    /*   when media is screen and its max width is smaller than 576px, the following rules are applied */
+      .header {
+        grid-template-columns: 1fr 1fr;
+      }
+      #navbutton {
+        display: block;
+        grid-row-start: 1;
+        grid-column-start: 2;
+        justify-self: end;
+        margin: 0.3em;
+      }
+      .logo {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        width: 52px;
+        justify-self: start;
+      }
+      .navigation {
+        flex-direction: column;
+        min-width: 100%;
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        max-height: 0;
+        overflow: hidden;
+      }
+      .navigation.open {
+        max-height: 50vh;
+      }
+      .navigation a {
+        border-bottom: 1px solid #4d1d18;
+      }
+    }
