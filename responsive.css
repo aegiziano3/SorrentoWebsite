@@ -2,7 +2,7 @@
 @media screen and ( max-width: 576px ) {
     /*   when media is screen and its max width is smaller than 576px, the following rules are applied */
       .header {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
       }
       .home-link {
           justify-self: start; 
@@ -26,7 +26,7 @@
       .navigation {
         flex-direction: column;
         min-width: auto;
-        grid-row-start: 1;
+        grid-row-start: 2;
         grid-column-start: 1;
         grid-column-end: 3;
         max-height: 0;
@@ -38,5 +38,30 @@
       .navigation a {
         border-bottom: 1px solid #4d1d18;
       }
+      .social {
+        justify-self: center;
+        align-self: center;
+      }
+      .social a { 
+      font-size: 1em;
+      padding: 0.2;
+      margin: 0;
+      }
 
+      .copyright {
+        font-size: 0.7em;
+        justify-self: end;
+        align-self: center;
+      }
+      .secondary-nav {
+        font-size: 0.6em;
+        justify-self: center;
+        align-self: center;
+      }
+
+      .footer {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        padding: 1em;
+      }
     }
