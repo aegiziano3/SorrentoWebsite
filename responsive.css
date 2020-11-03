@@ -1,7 +1,13 @@
+/* responsive styles */
 @media screen and ( max-width: 576px ) {
     /*   when media is screen and its max width is smaller than 576px, the following rules are applied */
       .header {
         grid-template-columns: 1fr 1fr;
+      }
+      .home-link {
+          justify-self: start; 
+          grid-row-start: 1;
+          grid-column-start: 1;
       }
       #navbutton {
         display: block;
@@ -13,13 +19,14 @@
       .logo {
         grid-row-start: 1;
         grid-column-start: 1;
-        width: 52px;
+        max-width: 200px;
         justify-self: start;
+        align-self: center;
       }
       .navigation {
         flex-direction: column;
-        min-width: 100%;
-        grid-row-start: 2;
+        min-width: 100vh;
+        grid-row-start: 1;
         grid-column-start: 1;
         grid-column-end: 3;
         max-height: 0;
@@ -30,5 +37,9 @@
       }
       .navigation a {
         border-bottom: 1px solid #4d1d18;
+      }
+
+      .social {
+          
       }
     }
