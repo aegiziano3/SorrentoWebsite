@@ -25,7 +25,7 @@
       }
       .navigation {
         flex-direction: column;
-        min-width: 100vh;
+        min-width: auto;
         grid-row-start: 1;
         grid-column-start: 1;
         grid-column-end: 3;
