@@ -94,33 +94,57 @@ display: none;
 .navigation .active {
     font-weight: bold;
 }
-.content {
+/* .content {
     line-height: var(--content-lh);
     max-width: 1024px;
     margin: auto;
+    padding: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 0px;
+    justify-self: start;
+} */
+
+.content img {
+    justify-self: start;
+    align-self: end;
+    grid-area: 3;
+
 }
 
 .content a {
     color: var(--content-link);
 }
+.main-content {
+    line-height: var(--content-lh);
+    max-width: 1024px;
+    margin: auto;
+    /* display: grid; */
+   
+    /* justify-self: center; */
+    /* align-self: center; */
+}
+
+.item-about img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.item-about {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-gap: 30px;
+    align-self: center;
+    justify-self: center;
+}
+
 .footer {
     color: var(--footer-link);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: var(--light-brown);
     padding: 1.2em;
-}
-#video {
-    grid-column: span 2;
-    justify-self: end;
-}
-.video-paragraph {
-    justify-self: start;
-    align-self: start;
 }
 
 .item {
@@ -170,6 +194,8 @@ display: none;
     max-width: 640px;
     margin: auto;
     margin-top: 4em;
+    align-self: center;
+    justify-self: center;
 }
 
 .label {
@@ -208,3 +234,67 @@ display: none;
     height: 500px;
     object-fit: cover;
 }
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#map {
+    justify-self: center;
+    align-self: center;
+}
+
+/* home grid */
+.grid-container {
+    display: grid;
+    margin: 80px;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .item1 {
+   grid-column: 1;
+  }
+
+  .item2 {
+    grid-column: 2;
+  }
+
+  .item3 {
+    grid-column: 1;
+  }
+
+  .item4 {
+    grid-column: 2;
+  }
+
+  .grid-container {
+      grid-template-areas: 4;
+  }
+
+  #video {
+    grid-column: 2;
+    justify-self: center;
+    max-width: auto;
+}
+
+
+/* .image-text {
+    justify-self: start;
+    grid-area: 4;
+}
+
+.video-text {
+    justify-self: end;
+    grid-column: 1;
+} */
