@@ -86,9 +86,20 @@ display: none;
     color: var(--nav-link);
     padding: 0.8em;
 }
+.navigation a:link {
+    color: var(--nav-link);
+}
+
+.navigation a:visited {
+    color: white;
+}
 
 .navigation a:hover {
     color: var(--nav-hover);
+}
+
+.navigation a:active {
+    color: white;
 }
 
 .navigation .active {
