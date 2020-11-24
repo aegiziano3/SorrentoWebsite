@@ -1,5 +1,5 @@
 /* responsive styles */
-@media screen and ( max-width: 576px ) {
+@media screen and (max-width: 576px) {
     /*   when media is screen and its max width is smaller than 576px, the following rules are applied */
       .header {
         grid-template-columns: 1fr;
@@ -42,7 +42,7 @@
 #contact {
   grid-column-start: 1;
   grid-column-end: 3;
-  max-width: 100%;
+  min-width: 100%;
   margin: 0;
 }
 
@@ -54,6 +54,7 @@
 
 .content {
   min-width: 90vw;
+  margin: auto;
   padding-left: 10px;
   padding-right: 10px;
 }
