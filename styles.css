@@ -105,7 +105,7 @@ display: none;
 .navigation .active {
     font-weight: bold;
 }
-/* .content {
+ .content { 
     line-height: var(--content-lh);
     max-width: 1024px;
     margin: auto;
@@ -115,7 +115,7 @@ display: none;
     grid-template-rows: 1fr 1fr;
     grid-gap: 0px;
     justify-self: start;
-} */
+} 
 
 .content img {
     justify-self: start;
