@@ -54,6 +54,8 @@
 
 .content {
   min-width: 90vw;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
       .social {
@@ -82,4 +84,12 @@
         grid-template-columns: auto 1fr auto;
         padding: 1em;
       }
+    }
+
+    .item {
+      grid-column: span 2;
+    }
+
+    .item img {
+      width: 100%;
     }

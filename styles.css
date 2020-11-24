@@ -108,7 +108,7 @@ display: none;
  .content { 
     line-height: var(--content-lh);
     max-width: 1024px;
-    margin: auto;
+    margin: 30px auto;
     padding: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -207,6 +207,10 @@ display: none;
     /* margin-top: 4em; */
     align-self: center;
     justify-self: center;
+}
+
+.contact-details {
+    
 }
 
 .label {
