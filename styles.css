@@ -109,11 +109,11 @@ display: none;
     line-height: var(--content-lh);
     max-width: 1024px;
     margin: 30px auto;
-    padding: 60px;
+    padding: 80px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 0px;
+    grid-gap: 10px;
     justify-self: start;
 } 
 
