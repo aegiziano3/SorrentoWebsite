@@ -1,18 +1,18 @@
 function onLoad() {
-    const btn = document.querySelector('#navbutton')
-    const nav = document.querySelector('.navigation')
+    const btn = document.querySelector("#navbutton")
+    const nav = document.querySelector("navigation")
   
-    btn.addEventListener('click', function() {
-      if( nav.classList.contains('open') ) {
-        nav.classList.remove('open')
+    btn.addEventListener("click", function() {
+      if( nav.classList.contains("open") ) {
+        nav.classList.remove("open")
       }
       else {
-        nav.classList.add('open')
+        nav.classList.add("open")
       }
     } )
     //slideshow
-    const slideshow = document.querySelector('#slideshow')
+    const slideshow = document.querySelector("#slideshow")
     const slides = new slides (slideshow, {})
   }
   
-  window.addEventListener( 'load' , onLoad )
+  window.addEventListener( "load" , onLoad )
